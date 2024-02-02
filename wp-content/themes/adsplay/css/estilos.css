@@ -2,7 +2,7 @@ html body {
   font-family: "Oswald", sans-serif !important;
 }
 html body .container {
-  max-width: 1240px;
+  max-width: 1140px;
   margin: 0 auto;
 }
 html body .header-container {
@@ -20,6 +20,9 @@ html body .header-container .header-content-top .header-content .logo img {
   height: 90%;
   width: auto;
 }
+html body .header-container .header-content-top .header-content .icons-header {
+  margin-left: 1rem;
+}
 html body .header-container .header-content-top .header-content .icons-header .icons-header-item svg {
   height: 1.3rem;
   width: auto;
@@ -28,6 +31,74 @@ html body .header-container .header-content-top .header-content .icons-header .i
 html body .header-container .header-content-top .header-content .icons-header .icons-header-item:last-of-type svg {
   height: 2.1rem;
   margin-top: 0.2rem;
+}
+html body .header-container .header-content-top .header-content .polylang-languages {
+  width: auto;
+  height: auto;
+  max-height: 1.938rem;
+  position: absolute;
+  right: 1.25rem;
+  top: 1.4rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  transition: 0.5s ease all;
+  border-radius: 0.625rem;
+  background-color: transparent;
+  padding: 0.3rem 1.938rem 0.6rem 1.238rem;
+}
+html body .header-container .header-content-top .header-content .polylang-languages:hover {
+  max-height: 6rem;
+  transition: 0.5s ease all;
+  background-color: rgba(0, 0, 0, 0.425);
+  padding: 0.3rem 1.938rem 0.6rem 1.238rem;
+  margin: 0px;
+}
+html body .header-container .header-content-top .header-content .polylang-languages li {
+  display: flex;
+  height: auto;
+  padding: 0px;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  width: auto;
+  margin: 0.3rem 0rem 0rem 0rem;
+  order: 2;
+}
+html body .header-container .header-content-top .header-content .polylang-languages li a {
+  flex-direction: row-reverse;
+  display: flex;
+  padding: 0px;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  width: auto;
+}
+html body .header-container .header-content-top .header-content .polylang-languages li a span {
+  font-size: 0.875rem;
+  color: white;
+  text-decoration: none;
+  font-weight: 400;
+  margin-right: 0.5rem;
+}
+html body .header-container .header-content-top .header-content .polylang-languages li a img {
+  height: 1rem !important;
+  width: auto !important;
+}
+html body .header-container .header-content-top .header-content .polylang-languages .current-lang {
+  order: 1 !important;
+}
+html body .header-container .header-content-top .header-content .polylang-languages::before {
+  position: absolute;
+  top: 0rem;
+  right: 0.7rem;
+  content: ">";
+  color: white;
+  font-weight: 400;
+  transform: rotate(90deg);
+  font-size: 1.5rem;
 }
 html body .header-container .header-menu-content {
   display: flex;
@@ -71,6 +142,11 @@ html body .header-container .header-menu-content .menu-header-container .menu .m
   text-align: right;
   text-decoration: none;
   text-transform: uppercase;
+  transition: 0.5s ease all;
+}
+html body .header-container .header-menu-content .menu-header-container .menu .menu-item a:hover {
+  transition: 0.5s ease all;
+  color: #c791c7;
 }
 
 @media (min-width: 1200px) {
@@ -85,6 +161,9 @@ html body .header-container .header-menu-content .menu-header-container .menu .m
   html .container {
     max-width: 1340px;
     margin: 0 auto;
+  }
+  html .icons-header {
+    margin-left: 0rem !important;
   }
 }
 @media (min-width: 1800px) {

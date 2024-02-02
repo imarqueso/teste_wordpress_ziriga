@@ -28,7 +28,7 @@
 
 	<header class="header-container col-12" id="header-container">
 		<section class="header-content-top col-12">
-			<div class="header-content container row">
+			<div class="header-content container row position-relative">
 				<div id="hamburger-box" class="d-flex d-lg-none">
 					<img src="<?php echo get_site_url(); ?>/wp-content/themes/adsplay/assets/images/menu_hamburger.svg" alt="Icon Menu">
 				</div>
@@ -68,7 +68,7 @@
 					</a>
 				</div>
 				<?php if ( function_exists( 'pll_the_languages' ) ) : ?>
-					<div class="polylang-languages col-1">
+					<div class="polylang-languages">
 						<?php pll_the_languages( array( 'show_flags' => 1, 'show_names' => 1 ) ); ?>
 					</div>
 				<?php endif; ?>

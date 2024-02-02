@@ -4,7 +4,7 @@ html {
         font-family: 'Oswald', sans-serif !important;
 
         .container {
-            max-width: 1240px;
+            max-width: 1140px;
             margin: 0 auto;
         }
         
@@ -18,7 +18,6 @@ html {
                 .header-content {
                     padding-top: 1.25rem;
                     padding-bottom: 1.25rem;
-                    // background-color: red;
                 
                     .logo img {
                         height: 90%;
@@ -26,6 +25,8 @@ html {
                     }
                 
                     .icons-header {
+                        margin-left: 1rem;
+
                         .icons-header-item {
                             svg {
                                 height: 1.3rem;
@@ -41,11 +42,86 @@ html {
                             }
                         }
                     }
+
+                    .polylang-languages {
+                        width: auto;
+                        height: auto;
+                        max-height: 1.938rem;
+                        position: absolute;
+                        right: 1.25rem;
+                        top: 1.4rem;
+                        overflow: hidden;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: flex-start;
+                        align-items: flex-start;
+                        transition: 0.5s ease all;
+                        border-radius: 0.625rem;
+                        background-color: transparent;
+                        padding: 0.3rem 1.938rem 0.6rem 1.238rem;
+
+                        &:hover {
+                            max-height: 6rem;
+                            transition: 0.5s ease all;
+                            background-color: rgba(0, 0, 0, 0.425);
+                            padding: 0.3rem 1.938rem 0.6rem 1.238rem;
+                            margin: 0px;
+                        }
+
+                        li {
+                            display: flex;
+                            height: auto;
+                            padding: 0px;
+                            justify-content: center;
+                            align-items: center;
+                            list-style: none;
+                            width: auto;
+                            margin: 0.3rem 0rem 0rem 0rem;
+                            order: 2;
+
+                            a {
+                                flex-direction: row-reverse;
+                                display: flex;
+                                padding: 0px;
+                                justify-content: center;
+                                align-items: center;
+                                text-decoration: none;
+                                width: auto;
+
+                                span {
+                                    font-size: 0.875rem;
+                                    color: white;
+                                    text-decoration: none;
+                                    font-weight: 400;
+                                    margin-right: 0.5rem;
+                                }
+
+                                img {
+                                    height: 1rem !important;
+                                    width: auto !important;
+                                }
+                            }
+                        }
+
+                        .current-lang {
+                            order: 1 !important;
+                        }
+
+                        &::before {
+                            position: absolute;
+                            top: 0rem;
+                            right: 0.7rem;
+                            content: ">";
+                            color: white;
+                            font-weight: 400;
+                            transform: rotate(90deg);
+                            font-size: 1.5rem;
+                        }
+                    }
                 }
             }
         
             .header-menu-content {
-                // background-color: green;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -87,6 +163,12 @@ html {
                                 text-align: right;
                                 text-decoration: none;
                                 text-transform: uppercase;
+                                transition: 0.5s ease all;
+
+                                &:hover {
+                                    transition: 0.5s ease all;
+                                    color: #c791c7;
+                                }
                             }
                         }
                     }
@@ -111,6 +193,10 @@ html {
         .container {
             max-width: 1340px;
             margin: 0 auto;
+        }
+
+        .icons-header {
+            margin-left: 0rem !important;
         }
     }
 }
