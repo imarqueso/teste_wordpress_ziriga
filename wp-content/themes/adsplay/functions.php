@@ -690,3 +690,13 @@ require get_parent_theme_file_path( '/inc/icon-functions.php' );
  * Block Patterns.
  */
 require get_template_directory() . '/inc/block-patterns.php';
+
+function wpb_theme_styles() {
+    // Register the Bootstrap stylesheet
+    wp_enqueue_style('bootstrap', get_template_directory_uri() . '/node_modules/bootstrap/dist/css/bootstrap.min.css');
+	wp_enqueue_style('estilos', get_template_directory_uri() . '/css/estilos.css');
+}
+
+// Hook into the 'wp_enqueue_scripts' action
+add_action('wp_enqueue_scripts', 'wpb_theme_styles');
+

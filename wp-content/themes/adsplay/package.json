@@ -1,0 +1,17 @@
+{
+  "name": "adsplay",
+  "version": "1.0.0",
+  "description": "=== Twenty Seventeen === Contributors: wordpressdotorg Tested up to: 6.1 Version: 3.1 License: GPLv2 or later License URI: http://www.gnu.org/licenses/gpl-2.0.html Tags: one-column, two-columns, right-sidebar, flexible-header, accessibility-ready, custom-colors, custom-header, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, post-formats, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, block-patterns",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass:watch": "sass --watch scss:css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.2",
+    "sass": "^1.70.0"
+  }
+}
