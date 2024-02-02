@@ -68,6 +68,7 @@ function twentyseventeen_setup() {
 		array(
 			'top'    => __( 'Top Menu', 'twentyseventeen' ),
 			'social' => __( 'Social Links Menu', 'twentyseventeen' ),
+			'Header' => __( 'Header', 'Header' ),
 		)
 	);
 

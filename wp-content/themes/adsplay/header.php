@@ -62,5 +62,17 @@
 					</svg>
 				</a>
 			</div>
+			<?php if ( function_exists( 'pll_the_languages' ) ) : ?>
+				<div class="polylang-languages">
+					<?php pll_the_languages( array( 'show_flags' => 1, 'show_names' => 1 ) ); ?>
+				</div>
+			<?php endif; ?>
+		</section>
+		<section class="header-menu-content">
+				<?php
+				wp_nav_menu(array(
+					'theme_location' => 'Header'
+				));
+				?>
 		</section>
 	</header>
