@@ -47,13 +47,13 @@ html body .header-container .header-content-top .header-content .polylang-langua
   transition: 0.5s ease all;
   border-radius: 0.625rem;
   background-color: transparent;
-  padding: 0.3rem 1.938rem 0.6rem 1.238rem;
+  padding: 0.3rem 1.938rem 0.6rem 1rem;
 }
 html body .header-container .header-content-top .header-content .polylang-languages:hover {
   max-height: 6rem;
   transition: 0.5s ease all;
   background-color: rgba(0, 0, 0, 0.425);
-  padding: 0.3rem 1.938rem 0.6rem 1.238rem;
+  padding: 0.3rem 1.938rem 0.6rem 1rem;
   margin: 0px;
 }
 html body .header-container .header-content-top .header-content .polylang-languages li {

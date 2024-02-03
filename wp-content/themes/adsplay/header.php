@@ -82,11 +82,23 @@
 				?>
 		</section>
 		<section class="breadcrumbs-content container">
-				Home > Soluções - Mídia > Mídia Programática 
+			<?php if ( function_exists('bcn_display') ) : ?>
+					<?php bcn_display(); ?>
+			<?php endif; ?>
 		</section>
 	</header>
-	<section class="banner-container" style="background-image: url(<?php echo get_site_url(); ?>/<?php echo get_field('background-site'); ?>);">
-		<div class="banner-content container">
-			
-		</div>
-	</section>
+
+	<script>
+		var BreadcrumbLink = document.querySelector("a.home");
+
+		if (BreadcrumbLink) {
+			var SpanElement = BreadcrumbLink.querySelector("span");
+		}
+
+		if (SpanElement) {
+			SpanElement.textContent = "Home";
+		} else {
+			var BreadcrumbSpan = document.querySelector("span.home");
+			BreadcrumbSpan.textContent = "Home";
+		}
+	</script>

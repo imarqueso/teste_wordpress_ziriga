@@ -700,4 +700,3 @@ function wpb_theme_styles() {
 
 // Hook into the 'wp_enqueue_scripts' action
 add_action('wp_enqueue_scripts', 'wpb_theme_styles');
-
