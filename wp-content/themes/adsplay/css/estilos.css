@@ -6,8 +6,7 @@ html body .container {
   margin: 0 auto;
 }
 html body .header-container {
-  background: rgb(46, 46, 46);
-  background: linear-gradient(0deg, rgba(46, 46, 46, 0) 0%, rgba(46, 46, 46, 0.2329306723) 13%, rgba(46, 46, 46, 0.5158438375) 30%, rgba(46, 46, 46, 0.7735469188) 51%, rgba(36, 36, 36, 0.9332107843) 77%, rgb(27, 27, 27) 100%);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.02) 0%, rgba(0, 0, 0, 0.31) 11%, rgba(0, 0, 0, 0.65) 30%, rgba(0, 0, 0, 0.88) 51%, rgb(0, 0, 0) 83%, rgb(0, 0, 0) 100%);
   position: fixed;
   top: 0px;
   left: 0px;
@@ -182,7 +181,7 @@ html body .header-container .breadcrumbs-content a span:hover {
 html body .header-container .breadcrumbs-content .current-item {
   font-size: 1;
   color: #ee0c63;
-  font-weight: 600;
+  font-weight: 700;
   text-decoration: none;
   opacity: 1;
   margin: 0px 0.7rem 0px 0.7rem;
