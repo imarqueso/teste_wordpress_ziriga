@@ -1,0 +1,105 @@
+@font-face {
+    font-family: 'Parkson';
+    src: url('../assets/fonts/Parkson.otf') format('opentype'),
+         url('../assets/fonts/Parkson.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.banner-principal {
+    width: 100%;
+    height: 85vh;
+    padding: 0px;
+    margin: 0px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: top;
+    background-position-x: center;
+
+    .banner-overlay {
+        width: 100%;
+        height: 100%;
+        background: rgb(0,0,0);
+        background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.700717787114846) 31%, rgba(0,0,0,0.41780462184873945) 68%, rgba(0,0,0,0) 100%);
+
+        .banner-content {
+            height: 100%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            position: relative;
+
+            .banner-box {
+                width: 100%;
+                height: 100%;
+                padding: 0px;
+                margin: 0px;
+                display: flex;
+                flex-direction: column;
+                padding-bottom: 2.3rem;
+                justify-content: flex-end;
+                align-items: flex-start;
+
+                img {
+                    height: 6.063rem;
+                    width: auto;
+                    margin-bottom: 2rem;
+                }
+
+                h1 {
+                    font-weight: 600;
+                    font-size: 4.2rem;
+                    color: #FFFFFF;
+                    text-align: left;
+                    margin-bottom: 1.063rem;
+                    padding: 0px;
+                    font-family: 'Parkson', sans-serif;
+                    text-transform: uppercase;
+                }
+
+                p {
+                    font-weight: 600;
+                    font-size: 1.5rem;
+                    color: #FFFFFF;
+                    text-align: left;
+                    margin-bottom: 2.4rem;
+                    font-family: 'Inter', sans-serif !important;
+                }
+
+                span {
+                    font-weight: 200;
+                    font-size: 1em;
+                    color: #FFFFFF;
+                    text-align: left;
+                    margin-bottom: 1rem;
+                    font-family: 'Inter', sans-serif !important;
+                }
+
+                .btn-banner {
+                    width: 22.938rem;
+                    height: 2.25rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 1.157rem;
+                    background-color:#8870FF;
+                    color: #FFFFFF;
+                    font-weight: 700;
+                    text-align: center;
+                    font-size: 0.875rem;
+                    line-height: 1.5rem;
+                    font-family: 'Inter', sans-serif !important;
+                    text-decoration: none;
+                }
+            }
+
+            .form-box {
+                width: 6.25rem;
+                height: 8.25rem;
+                position: absolute;
+                right: 0.625rem;
+                top: 6.25rem;
+            }
+        }
+    }
+}
