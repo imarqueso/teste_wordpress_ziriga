@@ -14,6 +14,7 @@ html {
              position: fixed;
              top: 0px;
              left: 0px;
+             z-index: 1000;
  
              .header-content-top {
                  border-bottom: 1px solid #838383;
@@ -234,7 +235,7 @@ html {
          font-size: 14px;
          
          .container {
-             max-width: 1340px;
+             max-width: 1340px !important;
              margin: 0 auto;
          }
  
@@ -249,7 +250,7 @@ html {
          font-size: 16px;
  
          .container {
-             max-width: 1440px;
+             max-width: 1440px !important;
              margin: 0 auto;
          }
      }

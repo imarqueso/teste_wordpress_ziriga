@@ -11,6 +11,7 @@ html body .header-container {
   position: fixed;
   top: 0px;
   left: 0px;
+  z-index: 1000;
 }
 html body .header-container .header-content-top {
   border-bottom: 1px solid #838383;
@@ -197,7 +198,7 @@ html body .header-container .breadcrumbs-content .current-item {
     font-size: 14px;
   }
   html .container {
-    max-width: 1340px;
+    max-width: 1340px !important;
     margin: 0 auto;
   }
   html .icons-header {
@@ -209,7 +210,7 @@ html body .header-container .breadcrumbs-content .current-item {
     font-size: 16px;
   }
   html .container {
-    max-width: 1440px;
+    max-width: 1440px !important;
     margin: 0 auto;
   }
 }
@@ -226,7 +227,8 @@ html body .header-container .breadcrumbs-content .current-item {
 }
 .banner-principal {
   width: 100%;
-  height: 85vh;
+  height: 82vh;
+  max-height: 43.875rem;
   padding: 0px;
   margin: 0px;
   background-size: cover;
@@ -291,26 +293,129 @@ html body .header-container .breadcrumbs-content .current-item {
 }
 .banner-principal .banner-overlay .banner-content .banner-box .btn-banner {
   width: 22.938rem;
-  height: 2.25rem;
+  height: 2.375rem;
+  border-radius: 1rem;
+  background-color: #8870FF;
+  padding: 1.188rem 1rem 1.188rem 1rem;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 0.875rem;
+  font-family: "Inter", sans-serif !important;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 1.157rem;
-  background-color: #8870FF;
-  color: #FFFFFF;
-  font-weight: 700;
-  text-align: center;
-  font-size: 0.875rem;
-  line-height: 1.5rem;
-  font-family: "Inter", sans-serif !important;
   text-decoration: none;
 }
-.banner-principal .banner-overlay .banner-content .form-box {
-  width: 6.25rem;
-  height: 8.25rem;
+.banner-principal .banner-overlay .banner-content .form-content {
+  width: 27.813rem;
+  height: auto;
   position: absolute;
   right: 0.625rem;
-  top: 6.25rem;
+  top: 8.8rem;
+  border-radius: 1.25rem;
+  padding: 1rem 1.2rem 1.263rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #FFFFFF;
+}
+.banner-principal .banner-overlay .banner-content .form-content h2 {
+  font-size: 2.5rem;
+  line-height: 3.25rem;
+  color: #6B0B68;
+  padding: 0px;
+  font-family: "Parkson", sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 1.25rem;
+}
+.banner-principal .banner-overlay .banner-content .form-content form {
+  width: 100%;
+  height: auto;
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.banner-principal .banner-overlay .banner-content .form-content form .form-box {
+  width: 100%;
+  height: auto;
+  padding: 0px;
+  margin: 0px;
+  margin-bottom: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.banner-principal .banner-overlay .banner-content .form-content form .form-box label {
+  width: 100%;
+  height: auto;
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.banner-principal .banner-overlay .banner-content .form-content form .form-box label span {
+  font-family: "Inter", sans-serif !important;
+  color: #1E0C42;
+  font-weight: 600;
+  text-align: left;
+  font-size: 0.875rem;
+  margin-bottom: 0.8rem;
+}
+.banner-principal .banner-overlay .banner-content .form-content form .form-box label input {
+  width: 100%;
+  height: 2.375rem;
+  border-radius: 1rem;
+  border: 1px solid #e6E6E6;
+  background-color: #F9F9F9;
+  padding: 1.188rem 1rem 1.188rem 1rem;
+  color: #737373;
+  font-weight: 400;
+  font-size: 0.875rem;
+  font-family: "Inter", sans-serif !important;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.banner-principal .banner-overlay .banner-content .form-content form .form-box label select {
+  width: 100%;
+  height: 2.375rem;
+  border-radius: 1rem;
+  border: 1px solid #e6E6E6;
+  background-color: #F9F9F9;
+  padding: 1.188rem 1rem 1.188rem 1rem;
+  color: #737373;
+  font-weight: 400;
+  font-size: 0.875rem;
+  font-family: "Inter", sans-serif !important;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.banner-principal .banner-overlay .banner-content .form-content form .form-box:first-of-type label {
+  width: 48.5%;
+}
+.banner-principal .banner-overlay .banner-content .form-content form button {
+  width: 100%;
+  height: 2.375rem;
+  border-radius: 1rem;
+  background-color: #B700B7;
+  border: 1px solid #B700B7;
+  padding: 1.188rem 1rem 1.188rem 1rem;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 0.875rem;
+  font-family: "Inter", sans-serif !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*# sourceMappingURL=estilos.css.map */
