@@ -82,6 +82,19 @@ Acesse diferentes inventários e agrupe eles sob as mesmas métricas, faça uplo
         </div>
     </div>
 </section>
+<section class="formatos-titulo-container">
+    <div class="formatos-titulo-overlay" style="background-image: url(<?php echo get_site_url(); ?>/wp-content/themes/adsplay/assets/images/formatos-background.png);">
+        <div class="formato-titulo-content container">
+            <div class="formato-titulo">
+                <h3>Formatos</h3>
+                <hr>
+            </div>
+            <div class="formato-subtitulo">
+                <p>Contamos com uma série de formatos e inventários exclusivos mobile, tais como:</p>
+            </div>
+        </div>
+    </div>
+</section>
 
 <?php if (have_posts()) :
     while (have_posts()) : the_post();

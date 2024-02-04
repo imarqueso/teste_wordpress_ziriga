@@ -294,3 +294,81 @@
         }
     }
 }
+
+.formatos-titulo-container {
+    width: 100%;
+    height: auto;
+    background-color: #8C008C;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+
+    .formatos-titulo-overlay {
+        width: 100%;
+        height: auto;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 3.6rem 0px 1.6rem 0px;
+
+        .formato-titulo-content {
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+    
+            .formato-titulo {
+                width: 100%;
+                height: auto;
+                padding: 0px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                
+                h3 {
+                    color: #FFFFFF;
+                    font-size: 4rem;
+                    font-weight: 700;
+                    text-align: left;
+                    font-family: 'Parkson', sans-serif;
+                    text-transform: uppercase;
+                    padding: 0px;
+                }
+    
+                hr {
+                    width: 80%;
+                    border: none;
+                    background-color: #FFFFFF;
+                    margin: 0px;
+                }
+            }
+    
+            .formato-subtitulo {
+                width: 100%;
+                height: auto;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                padding: 0px;
+    
+                p {
+                    color: #FFFFFF;
+                    font-size: 1.5rem;
+                    line-height: 2.25rem;
+                    font-weight: 700;
+                    text-align: left;
+                    font-family: 'Inter', sans-serif !important;
+                    padding: 0px;
+                }
+            }
+        }
+    }
+}
