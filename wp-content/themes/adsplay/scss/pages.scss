@@ -90,6 +90,13 @@
                     justify-content: center;
                     align-items: center;
                     text-decoration: none;
+                    filter: brightness(1);
+                    transition: 0.5s ease all;
+
+                    &:hover {
+                        filter: brightness(1.3);
+                        transition: 0.5s ease all;
+                    }
                 }
             }
 
@@ -229,6 +236,13 @@
                         display: flex;
                         justify-content: center;
                         align-items: center;
+                        filter: brightness(1);
+                        transition: 0.5s ease all;
+
+                        &:hover {
+                            filter: brightness(1.4);
+                            transition: 0.5s ease all;
+                        }
                     }
                 }
             }
@@ -416,12 +430,11 @@
                 list-style: none;
                 height: auto;
                 width: auto;
-                padding: 0.838rem 1.125rem;
+                padding: 0px;
                 box-sizing: border-box;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                border-bottom: 2px solid transparent;
                 cursor: pointer;
                 transition: 0.5s ease all;
 
@@ -432,16 +445,43 @@
                     color: #B7B7B7;
                     transition: 0.5s ease all;
                     text-transform: uppercase;
+                    padding: 0.838rem 1.125rem;
+                    position: relative;
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        top: 100%;
+                        width: 100%;
+                        max-width: 0px;
+                        height: 2px;
+                        background-color: #FFFFFF;
+                        transition: 0.5s ease all;
+                    }
                 }
 
-                .aba-ativa {
-                    border-bottom: 2px solid #FFFFFF;
-                    transition: 0.5s ease all;
+                &.aba-ativa {
+                    position: relative;
 
                     span {
-                        font-weight: 700;
+                        font-weight: 400;
                         color: #DDFFAB;
                         transition: 0.5s ease all;
+
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            top: 100%;
+                            width: 100%;
+                            max-width: 200px;
+                            height: 2px;
+                            background-color: #FFFFFF;
+                            transition: 0.8s ease all;
+                        }
                     }
                 }
             }
@@ -528,6 +568,179 @@
                     max-height: 25rem;
                     transition: 0.5s ease all;
                 }
+            }
+        }
+    }
+}
+
+.formatos-container {
+    width: 100%;
+    height: auto;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background: rgb(30,12,66);
+    background: linear-gradient(90deg, rgba(30,12,66,1) 50%, rgba(237,237,237,1) 50%);
+
+    .formatos-content {
+        display: none;
+        align-items: stretch;
+        justify-content: center;
+        box-sizing: border-box;
+
+        &.abrir {
+            display: flex !important;
+        }
+
+        .formato-box-1 {
+            width: 50%;
+            max-width: 50%;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            background-color: #1e0c42;
+            box-sizing: border-box;
+            padding: 3.5rem 4.4rem 2rem 0rem;
+
+            p {
+                font-size: 1.125rem;
+                line-height: 2rem;
+                font-weight: 400;
+                color: #FFFFFF;
+                text-align: left;
+                font-family: 'Inter', sans-serif !important;
+
+                b {
+                    font-weight: 700;
+                }
+            }
+
+            hr {
+                width: 100%;
+                height: 1px;
+                border: none;
+                background-color: #FFFFFF;
+                margin: 0.625rem 0px 1.6rem 0px;
+            }
+
+            .formato-slide-content {
+                width: 100%;
+                height: auto;
+                padding: 0px;
+                margin: 0px;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+
+                .span-formato-slide {
+                    font-size: 0.875rem;
+                    line-height: 2rem;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    color: #FFFFFF;
+                    text-align: left;
+                    font-family: 'Inter', sans-serif !important;
+                }
+
+                .formato-slide-box {
+                    width: 100%;
+                    height: auto;
+                    display: flex;
+                    padding: 0px;
+                    margin: 0px;
+                    justify-content: center;
+                    align-items: center;
+                    position: relative;
+
+                    #arrow-left {
+                        height: 1rem;
+                        width: auto;
+                        cursor: pointer;
+                        position: absolute;
+                        left: -8px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }
+
+                    #arrow-right {
+                        height: 1rem;
+                        width: auto;
+                        cursor: pointer;
+                        position: absolute;
+                        right: -8px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }
+
+                    .formato-slide {
+                        width: 100%;
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        overflow: hidden;
+                        padding: 0px;
+                        margin: 0px;
+
+                        .item {
+                            text-decoration: none;
+                            cursor: pointer;
+                            padding: 0.3rem 0.938rem;
+                            border-right: 1px solid #3f2181;
+                            color: #DDFFAB;
+                            font-weight: 600;
+                            font-size: 0.875rem;
+                            font-family: 'Inter', sans-serif !important;
+                            width: auto;
+                            height: auto;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            
+                            span {
+                                border-bottom: 1px solid transparent;
+                                transition: 0.5s ease all;
+                                padding: 0.6rem 0px;
+
+                                &:last-of-type {
+                                    border-right: none;
+                                }
+                            }
+
+                        &:hover {
+                            span {
+                               border-bottom: 1px solid #DDFFAB;
+                               transition: 0.5s ease all;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }  
+
+        .formato-box-2 {
+            width: 50%;
+            max-width: 50%;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #ededed;
+            box-sizing: border-box;
+            padding: 1.3rem 0px;
+
+            img {
+                height: 12.5rem;
+                width: auto;
+                margin: 0px;
+                padding: 0px;
             }
         }
     }

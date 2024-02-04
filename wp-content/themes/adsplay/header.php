@@ -82,7 +82,7 @@
 				));
 				?>
 		</section>
-		<section class="breadcrumbs-content container">
+		<section class="breadcrumbs-content container" id="breadcrumbs-content">
 			<?php if ( function_exists('bcn_display') ) : ?>
 					<?php bcn_display(); ?>
 			<?php endif; ?>
@@ -103,3 +103,14 @@
 			BreadcrumbSpan.textContent = "Home";
 		}
 	</script>
+	<script>
+	const scrollBreadcrumb = document.getElementById('breadcrumbs-content');
+	
+	window.addEventListener('scroll', function() {
+		if (window.scrollY > 0) {
+		scrollBreadcrumb.classList.add('breadcrumb-visible');
+		} else {
+		scrollBreadcrumb.classList.remove('breadcrumb-visible');
+		}
+	});
+</script>

@@ -159,6 +159,14 @@ html body .header-container .breadcrumbs-content {
   color: #FFFFFF;
   font-size: 1;
   font-family: "Inter", sans-serif !important;
+  transition: 1s ease all;
+  opacity: 1;
+  visibility: visible;
+}
+html body .header-container .breadcrumbs-content.breadcrumb-visible {
+  transition: 1s ease all;
+  opacity: 0;
+  visibility: hidden;
 }
 html body .header-container .breadcrumbs-content a {
   text-decoration: none;
@@ -209,7 +217,7 @@ html body .header-container .breadcrumbs-content .current-item {
     font-size: 16px;
   }
   html .container {
-    max-width: 1500px !important;
+    max-width: 1510px !important;
     margin: 0 auto;
   }
 }
