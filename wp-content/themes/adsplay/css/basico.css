@@ -197,7 +197,7 @@ html body .header-container .breadcrumbs-content .current-item {
     font-size: 14px;
   }
   html .container {
-    max-width: 1340px !important;
+    max-width: 1320px !important;
     margin: 0 auto;
   }
   html .icons-header {
@@ -209,7 +209,7 @@ html body .header-container .breadcrumbs-content .current-item {
     font-size: 16px;
   }
   html .container {
-    max-width: 1440px !important;
+    max-width: 1500px !important;
     margin: 0 auto;
   }
 }
