@@ -175,6 +175,13 @@
                                 display: flex;
                                 justify-content: flex-start;
                                 align-items: center;
+
+                                &::placeholder {
+                                    color: #737373;
+                                    font-weight: 400;
+                                    font-size: 0.875rem;
+                                    font-family: 'Inter', sans-serif !important;
+                                }
                             }
 
                             select {
@@ -183,7 +190,7 @@
                                 border-radius: 1rem;
                                 border: 1px solid #e6E6E6;
                                 background-color: #F9F9F9;
-                                padding: 1.188rem 1rem 1.188rem 1rem;
+                                padding: 0rem 1rem 0rem 1rem;
                                 color: #737373;
                                 font-weight: 400;
                                 font-size: 0.875rem;
@@ -191,6 +198,13 @@
                                 display: flex;
                                 justify-content: flex-start;
                                 align-items: center;
+
+                                &::placeholder {
+                                    color: #737373;
+                                    font-weight: 400;
+                                    font-size: 0.875rem;
+                                    font-family: 'Inter', sans-serif !important;
+                                }
                             }
                         }
 

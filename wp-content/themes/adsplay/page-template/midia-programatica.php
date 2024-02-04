@@ -40,6 +40,7 @@ get_header();
                         <label>
                             <span>Cargo*</span>
                         <select name="cargo" id="">
+                            <option value="" selected>Escolha uma opção</option> 
                             <option value="Cargo 1">Cargo 1</option> 
                             <option value="Cargo 2">Cargo 2</option> 
                         </select>
@@ -49,6 +50,7 @@ get_header();
                         <label>
                             <span>Segmento*</span>
                         <select name="segmento" id="">
+                            <option value="" selected>Escolha uma opção</option> 
                             <option value="Segmento 1">Segmento 1</option> 
                             <option value="Segmento 2">Segmento 2</option> 
                         </select>
@@ -58,6 +60,7 @@ get_header();
                         <label>
                             <span>Interesse*</span>
                         <select name="interesse" id="">
+                            <option value="" selected>Escolha uma opção</option> 
                             <option value="Interesse 1">Interesse 1</option> 
                             <option value="Interesse 2">Interesse 2</option> 
                         </select>
@@ -95,7 +98,56 @@ Acesse diferentes inventários e agrupe eles sob as mesmas métricas, faça uplo
         </div>
     </div>
 </section>
-
+<section class="formatos-abas-container">
+    <div class="formatos-aba-content container">
+        <ul class="abas-formatos-box">
+            <li class="aba-formatos aba">
+                <span>Displays</span>
+            </li>
+            <li class="aba-formatos aba">
+                <span>Vídeo Advertising</span>
+            </li>
+            <li class="aba-formatos aba">
+                <span>Spotify</span>
+            </li>
+            <li class="aba-formatos aba">
+                <span>Dooh</span>
+            </li>
+            <li class="aba-formatos aba">
+                <span>Alto Impacto</span>
+            </li>
+            <li class="aba-formatos aba">
+                <span>Native Ads</span>
+            </li>
+            <li class="aba-formatos aba">
+                <span>Youtube Ads</span>
+            </li>
+            <li class="aba-formatos aba">
+                <span>Mobile Ads</span>
+            </li>
+            <li class="aba-formatos-list">
+                <span>Complementares</span>
+                <ul class="aba-formatos-list-box">
+                    <li class="aba-formatos-list-btn aba">
+                        <span>DCO</span>
+                    </li>
+                    <li class="aba-formatos-list-btn aba">
+                        <span>CDP e DPM</span>
+                    </li>
+                    <li class="aba-formatos-list-btn aba">
+                        <span>AD Server</span>
+                    </li>
+                    <li class="aba-formatos-list-btn aba">
+                        <span>TV Sync</span>
+                    </li>
+                    <li class="aba-formatos-list-btn aba">
+                        <span>Brand Lift</span>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</section>
 <?php if (have_posts()) :
     while (have_posts()) : the_post();
         the_content();
