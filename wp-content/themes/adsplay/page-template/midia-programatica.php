@@ -126,7 +126,7 @@ Acesse diferentes inventários e agrupe eles sob as mesmas métricas, faça uplo
                 <span>Mobile Ads</span>
             </li>
             <li class="aba-formatos-list">
-                <span>Complementares</span>
+                <span>Complementares <img src="<?php echo get_site_url(); ?>/wp-content/themes/adsplay/assets/images/icon_down.svg" alt="Icone Down"></span>
                 <ul class="aba-formatos-list-box">
                     <li class="aba-formatos-list-btn aba">
                         <span>DCO</span>
@@ -154,6 +154,24 @@ Acesse diferentes inventários e agrupe eles sob as mesmas métricas, faça uplo
         edit_post_link();
     endwhile;
 endif; ?>
+
+<script>
+    var abaFormatos = document.querySelectorAll("li.aba");
+    var modalFormatos = document.querySelectorAll("section.formatos-content");
+
+    abaFormatos.forEach(function(item, index) {
+        item.addEventListener("click", function() {
+                if (modalFormatos[index].classList.contains("abrir")) {
+                    modalFormatos[index].classList.remove("abrir");
+            } else {
+                for (var i = 0; i < modalFormatos.length; i++) {
+                    modalFormatos[i].classList.remove("abrir");
+                }
+                modalFormatos[index].classList.add("abrir");
+            }
+        });
+    });
+</script>
 
 <?php
 get_footer();

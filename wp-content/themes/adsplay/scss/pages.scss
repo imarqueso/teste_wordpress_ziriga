@@ -394,7 +394,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2rem 0px 3rem 0px;
+    padding: 2rem 0px 2rem 0px;
 
     .formatos-aba-content {
         height: auto;
@@ -421,7 +421,7 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                border-bottom: 2px solid #FFFFFF;
+                border-bottom: 2px solid transparent;
                 cursor: pointer;
                 transition: 0.5s ease all;
 
@@ -471,11 +471,19 @@
                     text-transform: uppercase;
                     font-size: 1rem;
                     border-radius: 1rem;
+
+                    img {
+                        height: 0.575rem;
+                        width: auto;
+                        margin-left: 0.838rem;
+                    }
                 }
 
                 .aba-formatos-list-box {
                     width: 100%;
                     height: auto;
+                    overflow: hidden;
+                    max-height: 0px;
                     padding: 0px;
                     margin: 0px;
                     display: flex;
@@ -487,6 +495,7 @@
                     position: absolute;
                     top: 77%;
                     left: 0px;
+                    transition: 0.5s ease all;
 
                     .aba-formatos-list-btn {
                         width: 100%;
@@ -513,6 +522,11 @@
                             font-size: 1rem;
                         }
                     }
+                }
+
+                &:hover .aba-formatos-list-box {
+                    max-height: 25rem;
+                    transition: 0.5s ease all;
                 }
             }
         }
