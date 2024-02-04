@@ -288,17 +288,14 @@ endif; ?>
 
     abaFormatos.forEach(function(item, index) {
         item.addEventListener("click", function() {
-            if (modalFormatos[index].classList.contains("abrir")) {
-                abaFormatos[index].classList.remove("aba-ativa");
-                modalFormatos[index].classList.remove("abrir");
-            } else {
-                for (var i = 0; i < modalFormatos.length; i++) {
-                    abaFormatos[i].classList.remove("aba-ativa");
-                    modalFormatos[i].classList.remove("abrir");
-                }
-                abaFormatos[index].classList.add("aba-ativa");
-                modalFormatos[index].classList.add("abrir");
+            
+            for (var i = 0; i < modalFormatos.length; i++) {
+                abaFormatos[i].classList.remove("aba-ativa");
+                modalFormatos[i].classList.remove("abrir");
             }
+            abaFormatos[index].classList.add("aba-ativa");
+            modalFormatos[index].classList.add("abrir");
+
         });
     });
 </script>
