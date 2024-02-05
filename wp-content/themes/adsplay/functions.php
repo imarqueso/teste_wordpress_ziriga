@@ -69,6 +69,8 @@ function twentyseventeen_setup() {
 			'top'    => __( 'Top Menu', 'twentyseventeen' ),
 			'social' => __( 'Social Links Menu', 'twentyseventeen' ),
 			'Header' => __( 'Header', 'Header' ),
+			'Sobre' => __( 'Sobre', 'Sobre' ),
+			'Footer' => __( 'Footer', 'Footer' ),
 		)
 	);
 

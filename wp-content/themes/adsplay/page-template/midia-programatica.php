@@ -390,6 +390,14 @@ Acesse diferentes inventários e agrupe eles sob as mesmas métricas, faça uplo
         </article>
     </div>
 </section>
+<section class="fale-conosco-container">
+    <div class="fale-conosco-overlay" style="background-image: url(<?php echo get_site_url(); ?>/wp-content/themes/adsplay/assets/images/formatos-background.png);">
+        <div class="fale-conosco-content container">
+            <h3>O que podemos fazer pela sua marca hoje?</h3>
+            <a href="#">Fale conosco</a>
+        </div>
+    </div>
+</section>
 <?php if (have_posts()) :
     while (have_posts()) : the_post();
         the_content();
