@@ -671,4 +671,109 @@
   padding: 0px;
 }
 
+.cases-titulo-container {
+  width: 100%;
+  height: auto;
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0px 1.2rem 0px;
+}
+.cases-titulo-container .cases-titulo-content {
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cases-titulo-container .cases-titulo-content h3 {
+  color: #6B0B68;
+  font-size: 4rem;
+  font-weight: 700;
+  text-align: left;
+  font-family: "Parkson", sans-serif;
+  padding: 0px;
+}
+.cases-titulo-container .cases-titulo-content hr {
+  width: 90%;
+  border: none;
+  background-color: #8870FF;
+  margin: 0px;
+  height: 2px;
+}
+
+.cases-container {
+  width: 100%;
+  height: auto;
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFFFFF;
+}
+.cases-container .cases-content {
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+  max-width: 113rem;
+  display: grid;
+  justify-content: space-between;
+  align-items: flex-start;
+  grid-template-columns: repeat(4, 24%);
+  gap: 1.25rem;
+  grid-auto-rows: auto;
+}
+.cases-container .cases-content .cases-card {
+  width: 100%;
+  height: 26.8rem;
+  padding: 0px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-decoration: none;
+  cursor: pointer;
+}
+.cases-container .cases-content .cases-card .cases-card-banner {
+  width: 110%;
+  height: auto;
+  min-height: 110%;
+  filter: grayscale(1);
+  transform: scale(1);
+  transition: 0.5s ease all;
+}
+.cases-container .cases-content .cases-card .cases-card-overlay {
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+  background: rgb(0, 0, 0);
+  background: radial-gradient(circle, rgba(0, 0, 0, 0.6082808123) 0%, rgba(0, 0, 0, 0.9416141457) 100%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.cases-container .cases-content .cases-card .cases-card-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 65%;
+  width: auto;
+  height: auto;
+  z-index: 999;
+}
+.cases-container .cases-content .cases-card:hover .cases-card-banner {
+  width: 110%;
+  height: auto;
+  min-height: 110%;
+  filter: grayscale(1);
+  transform: scale(1.2);
+  transition: 0.5s ease all;
+}
+
 /*# sourceMappingURL=pages.css.map */
