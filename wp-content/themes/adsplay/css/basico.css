@@ -195,6 +195,409 @@ html body .header-container .breadcrumbs-content .current-item {
   margin: 0px 0.7rem 0px 0.7rem;
 }
 
+.footer-container {
+  width: 100%;
+  height: auto;
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #1E0C42;
+}
+.footer-container .footer-content {
+  height: auto;
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 5rem;
+}
+.footer-container .footer-content .footer-box-1 {
+  width: auto;
+  height: auto;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.footer-container .footer-content .footer-box-1 .logo-footer {
+  width: 10.625rem;
+  height: auto;
+  margin: 0px;
+  margin-bottom: 1.875rem;
+}
+.footer-container .footer-content .footer-box-1 .icons-footer {
+  width: auto;
+  height: auto;
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.footer-container .footer-content .footer-box-1 .icons-footer .icons-footer-item svg {
+  height: 1.3rem;
+  width: auto;
+  margin-right: 0.938rem;
+}
+.footer-container .footer-content .footer-box-1 .icons-footer .icons-footer-item:last-of-type svg {
+  height: 2.1rem;
+  margin-top: 0.2rem;
+}
+.footer-container .footer-content .footer-box-2 {
+  width: 7.188rem;
+  height: auto;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.footer-container .footer-content .footer-box-2 .menu-sobre-container {
+  width: auto;
+  height: auto;
+  width: auto;
+  height: auto;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.footer-container .footer-content .footer-box-2 .menu-sobre-container .menu {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px;
+  margin: 0px;
+}
+.footer-container .footer-content .footer-box-2 .menu-sobre-container .menu .menu-item {
+  list-style: none;
+  height: auto;
+  width: auto;
+  padding: 0px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 0.45rem;
+}
+.footer-container .footer-content .footer-box-2 .menu-sobre-container .menu .menu-item a {
+  font-weight: 700;
+  font-size: 1.325rem;
+  color: #FFFFFF;
+  text-align: left;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.5s ease all;
+  font-family: "Parkson", sans-serif !important;
+}
+.footer-container .footer-content .footer-box-3 {
+  width: 10.813rem;
+  height: auto;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.footer-container .footer-content .footer-box-3 .menu-footer-container {
+  width: auto;
+  height: auto;
+  width: auto;
+  height: auto;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.footer-container .footer-content .footer-box-3 .menu-footer-container .menu {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px;
+  margin: 0px;
+}
+.footer-container .footer-content .footer-box-3 .menu-footer-container .menu .menu-item {
+  list-style: none;
+  height: auto;
+  width: auto;
+  padding: 0px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 0.45rem;
+}
+.footer-container .footer-content .footer-box-3 .menu-footer-container .menu .menu-item a {
+  font-weight: 700;
+  font-size: 1.325rem;
+  color: #FFFFFF;
+  text-align: left;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.5s ease all;
+  font-family: "Parkson", sans-serif !important;
+}
+.footer-container .footer-content .footer-box-4 {
+  width: 9.35rem;
+  height: 11.313rem;
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.footer-container .footer-content .footer-box-4 .footer-box-endereco {
+  width: auto;
+  height: auto;
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.footer-container .footer-content .footer-box-4 .footer-box-endereco p {
+  font-weight: 700;
+  font-size: 1.325rem;
+  color: #FFFFFF;
+  text-align: left;
+  text-transform: uppercase;
+  transition: 0.5s ease all;
+  font-family: "Parkson", sans-serif !important;
+  margin-bottom: 0.2rem;
+}
+.footer-container .footer-content .footer-box-4 .footer-box-endereco p:last-of-type {
+  margin-bottom: 0px;
+}
+.footer-container .footer-content .footer-box-4 .footer-box-contato {
+  width: auto;
+  height: auto;
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.footer-container .footer-content .footer-box-4 .footer-box-contato a {
+  font-weight: 700;
+  font-size: 1.325rem;
+  color: #FFFFFF;
+  text-align: left;
+  text-transform: uppercase;
+  transition: 0.5s ease all;
+  font-family: "Parkson", sans-serif !important;
+  margin-bottom: 0.2rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-decoration: none;
+}
+.footer-container .footer-content .footer-box-4 .footer-box-contato a img {
+  width: 1.125rem;
+  height: auto;
+  margin: 0px;
+  margin-right: 0.513rem;
+}
+.footer-container .footer-content .footer-box-4 .footer-box-contato a:last-of-type {
+  margin-bottom: 0px;
+}
+.footer-container .footer-content .footer-box-5 {
+  width: 23rem;
+  height: auto;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.footer-container .footer-content .footer-box-5 p {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #FFFFFF;
+  text-align: left;
+  font-family: "Inter", sans-serif !important;
+  margin-bottom: 1.5rem;
+}
+.footer-container .footer-content .footer-box-5 form {
+  width: auto;
+  height: auto;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.footer-container .footer-content .footer-box-5 form div {
+  width: auto;
+  height: auto;
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 1.563rem;
+}
+.footer-container .footer-content .footer-box-5 form div input {
+  width: 17.5rem;
+  height: 3.125rem;
+  outline: none;
+  border: none;
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #737373;
+  text-align: left;
+  border-radius: 1rem 0px 0px 1rem;
+  padding: 0px 1.25rem 0px 1.25rem;
+  margin: 0px;
+}
+.footer-container .footer-content .footer-box-5 form div button {
+  width: 6.875rem;
+  height: 3.125rem;
+  outline: none;
+  border: none;
+  border-radius: 0rem 1rem 1rem 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #6B0B68;
+  font-weight: 700;
+  color: #FFFFFF;
+  font-size: 1rem;
+  text-align: center;
+  cursor: pointer;
+  margin: 0px;
+  filter: brightness(1);
+  transition: 0.5s ease all;
+}
+.footer-container .footer-content .footer-box-5 form div button:hover {
+  filter: brightness(1.3);
+  transition: 0.5s ease all;
+}
+.footer-container .footer-content .footer-box-5 form label {
+  width: auto;
+  height: auto;
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.footer-container .footer-content .footer-box-5 form label input {
+  width: 1.3rem;
+  height: 1rem;
+  background-color: #FFFFFF;
+  border: 2px solid #FFFFFF;
+  border-radius: 0.5rem;
+  margin-right: 0.625rem;
+  overflow: hidden;
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+.footer-container .footer-content .footer-box-5 form label input:checked {
+  background-color: #6B0B68;
+}
+.footer-container .footer-content .footer-box-5 form label span {
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+  font-weight: 400;
+  color: #FFFFFF;
+  text-align: left;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Inter", sans-serif !important;
+}
+.footer-container .footer-bottom-container {
+  width: 100%;
+  height: auto;
+  padding: 2.5rem 0px;
+  margin: 0px;
+  border-top: 1px solid rgba(255, 255, 255, 0.168627451);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-container .footer-bottom-container .footer-bottom-content {
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-container .footer-bottom-container .footer-bottom-content p {
+  width: auto;
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+  font-weight: 400;
+  color: #FFFFFF;
+  text-align: left;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Inter", sans-serif !important;
+}
+.footer-container .footer-bottom-container .footer-bottom-content p a {
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+  font-weight: 400;
+  color: #FFFFFF;
+  text-align: left;
+  margin: 0px;
+  padding: 0px;
+  cursor: pointer;
+  text-decoration: none;
+  width: auto;
+  height: auto;
+  font-family: "Inter", sans-serif !important;
+}
+.footer-container .footer-bottom-container .footer-bottom-content .poweredby {
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+.footer-container .footer-bottom-container .footer-bottom-content .poweredby span {
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+  font-weight: 400;
+  color: #FFFFFF;
+  text-align: left;
+  margin: 0px;
+  padding: 0px;
+  margin-right: 0.625rem;
+  font-family: "Inter", sans-serif !important;
+}
+.footer-container .footer-bottom-container .footer-bottom-content .poweredby img {
+  height: 1.25rem;
+  width: auto;
+  margin: 0px;
+}
+
 @media (min-width: 1200px) {
   html {
     font-size: 12px;
