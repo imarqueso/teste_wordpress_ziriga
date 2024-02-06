@@ -36,7 +36,7 @@
 				<a href="<?php echo get_site_url(); ?>" class="logo text-decoration-none col-4 d-flex justify-content-start align-items-center">
 					<img src="<?php echo get_site_url(); ?>/wp-content/themes/adsplay/assets/images/logo_adsplay.svg" alt="ADSPLAY">
 				</a>
-				<div class="icons-header col-7 d-flex align-items-center justify-content-end">
+				<div class="icons-header col-7 d-none d-lg-flex align-items-center justify-content-end">
 					<a href="#" class="icons-header-item">
 						<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path d="M12.9154 7.35833C11.69 6.68323 10.3329 6.33189 8.95647 6.33334C7.57999 6.33479 6.22359 6.68898 4.99937 7.36666M11.7693 9.72479C10.8978 9.24695 9.93351 8.99856 8.95558 9.00001C7.97764 9.00146 7.01397 9.25271 6.14371 9.73313M10.6247 12.0917C10.109 11.8105 9.53892 11.6649 8.96097 11.6667C8.38088 11.6679 7.80889 11.8134 7.28954 12.0917M16.3892 9C16.3892 13.4183 13.0634 17 8.96068 17C4.85799 17 1.5321 13.4183 1.5321 9C1.5321 4.58172 4.85799 1 8.96068 1C13.0634 1 16.3892 4.58172 16.3892 9Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -75,7 +75,7 @@
 				<?php endif; ?>
 			</div>
 		</section>
-		<section class="header-menu-content container">
+		<section class="header-menu-content container" id="header-menu-content">
 				<?php
 				wp_nav_menu(array(
 					'theme_location' => 'Header'
@@ -104,13 +104,21 @@
 		}
 	</script>
 	<script>
-	const scrollBreadcrumb = document.getElementById('breadcrumbs-content');
-	
-	window.addEventListener('scroll', function() {
-		if (window.scrollY > 0) {
-		scrollBreadcrumb.classList.add('breadcrumb-visible');
-		} else {
-		scrollBreadcrumb.classList.remove('breadcrumb-visible');
-		}
-	});
-</script>
+		const scrollBreadcrumb = document.getElementById('breadcrumbs-content');
+		
+		window.addEventListener('scroll', function() {
+			if (window.scrollY > 0) {
+			scrollBreadcrumb.classList.add('breadcrumb-visible');
+			} else {
+			scrollBreadcrumb.classList.remove('breadcrumb-visible');
+			}
+		});
+	</script>
+	<script>
+		const menuDropIcon = document.getElementById('hamburger-box');
+		const menuDrop = document.getElementById('header-menu-content');
+
+		menuDropIcon.addEventListener('click', function() {
+			menuDrop.classList.toggle('menu-aberto');
+		});
+	</script>

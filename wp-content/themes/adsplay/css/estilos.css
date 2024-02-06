@@ -1705,4 +1705,74 @@ html body .header-container .breadcrumbs-content .current-item {
   transition: 0.5s ease all;
 }
 
+@media (max-width: 991px) {
+  .header-container {
+    background: #0B131F !important;
+    position: relative;
+  }
+  .header-container .header-content-top {
+    border-bottom: none !important;
+  }
+  .header-container .header-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2.25rem !important;
+    padding-bottom: 2.25rem !important;
+  }
+  .header-container .header-content #hamburger-box {
+    width: auto;
+    height: auto;
+    position: absolute;
+    left: 0.625rem;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1000;
+  }
+  .header-container .header-content .logo {
+    width: auto;
+    height: 2.4rem;
+  }
+  .header-container .header-content .polylang-languages {
+    top: 2.4rem !important;
+  }
+  .header-container .header-menu-content {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #0B131F !important;
+    padding: 0px !important;
+    z-index: 1000;
+    transition: 0.5s ease all;
+    max-height: 0px;
+    opacity: 0;
+    height: auto;
+    overflow: hidden;
+  }
+  .header-container .header-menu-content.menu-aberto {
+    max-height: 500px;
+    opacity: 1;
+    transition: 0.5s ease all;
+  }
+  .header-container .header-menu-content .menu {
+    flex-direction: column;
+    padding: 2rem 1.2rem !important;
+  }
+  .header-container .header-menu-content .menu .menu-item {
+    padding: 0.7rem 0px !important;
+  }
+  .header-container .breadcrumbs-content {
+    padding: 0.8rem 0.65rem;
+    position: absolute;
+    top: 110%;
+    left: 0rem;
+    max-width: 100%;
+    overflow: hidden;
+  }
+  .header-container .breadcrumbs-content span {
+    white-space: nowrap;
+  }
+}
+
 /*# sourceMappingURL=estilos.css.map */
