@@ -787,9 +787,14 @@
     padding: 0px;
     margin: 0px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #FFFFFF;
+
+    .btn-cases {
+        display: none;
+    }
 
     .cases-content {
         width: 100%;

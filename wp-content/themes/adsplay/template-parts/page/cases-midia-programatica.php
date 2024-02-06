@@ -54,4 +54,5 @@
             <img src="<?php echo get_site_url(); ?>/wp-content/themes/adsplay/assets/images/acer_logo.png" class="cases-card-logo">
         </a>
     </div>
+    <a href="#" class="btn-cases">Conheça outros cases</a>
 </section>

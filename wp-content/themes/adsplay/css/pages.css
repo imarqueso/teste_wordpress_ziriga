@@ -709,9 +709,13 @@
   padding: 0px;
   margin: 0px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #FFFFFF;
+}
+.cases-container .btn-cases {
+  display: none;
 }
 .cases-container .cases-content {
   width: 100%;

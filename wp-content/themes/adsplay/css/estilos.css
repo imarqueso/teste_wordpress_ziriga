@@ -1340,9 +1340,13 @@ html body .header-container .breadcrumbs-content .current-item {
   padding: 0px;
   margin: 0px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #FFFFFF;
+}
+.cases-container .btn-cases {
+  display: none;
 }
 .cases-container .cases-content {
   width: 100%;
@@ -1919,6 +1923,28 @@ html body .header-container .breadcrumbs-content .current-item {
   }
   .cases-titulo-content hr {
     width: 85% !important;
+  }
+  .cases-container .btn-cases {
+    width: 19.125rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #B700B7;
+    filter: brightness(1);
+    transition: 0.5s ease all;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+    font-family: "Inter", sans-serif !important;
+    border-radius: 1rem;
+    margin-top: 2rem;
+  }
+  .cases-container .btn-cases:hover {
+    filter: brightness(1.3);
+    transition: 0.5s ease all;
   }
   .cases-container .cases-content {
     grid-template-columns: repeat(4, 24.5%);
