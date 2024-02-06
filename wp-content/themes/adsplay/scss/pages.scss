@@ -65,6 +65,7 @@
                     text-align: left;
                     margin-bottom: 2.4rem;
                     font-family: 'Inter', sans-serif !important;
+                    max-width: 35rem;
                 }
 
                 span {
@@ -936,6 +937,7 @@
             justify-content: flex-start;
             align-items: center;
             float: left;
+            text-decoration: none !important;
 
             .blog-card-thumb {
                 height: 100%;
@@ -966,8 +968,13 @@
                 justify-content: space-between;
                 align-items: flex-start;
 
+                span {
+                    display: none;
+                }
+
                 h4 {
                     font-size: 3rem;
+                    padding: 0px !important;
                     line-height: 3.25rem;
                     font-weight: 700;
                     color: #6B0B68;

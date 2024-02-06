@@ -70,6 +70,17 @@
     }
 }
 
+@media (max-width: 1100px) {
+    .blog-container {
+        .blog-content {
+            display: flex !important;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+        }
+    }
+}
+
 @media (max-width: 991px) {
     .header-container {
         background: #0B131F !important;
@@ -254,6 +265,127 @@
         }
     }
   
+    .blog-titulo-container {
+        padding: 3rem 0px 2rem 0px!important;
+
+        .blog-titulo-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start !important;
+            align-items: flex-start !important;
+            padding-right: 1.5rem !important;
+            padding-left: 1.5rem !important;
+            position: relative;
+
+            &::before {
+                content: "";
+                width: 85%;
+                height: 1px;
+                background-color: #B700B7;
+                outline: none;
+                border: none;
+                position: absolute;
+                right: 1.5rem;
+                top: 2rem;
+            }
+
+            h3 {
+                font-size: 3rem !important;
+            }
+
+            .blog-subtitulo {
+                width: 100% !important;
+                margin-left: 0px !important;
+                border-top: none !important;
+                justify-content: flex-start !important;
+            }
+        }
+    }
+
+    .blog-container {
+        padding-bottom: 1rem !important;
+
+        .blog-content {
+            .blog-card {
+                width: 24.063rem !important;
+                height: 6rem !important;
+                margin-bottom: 1.3rem !important;
+
+                .blog-card-thumb {
+                    width: 10.125rem !important;
+                    min-width: 10.125rem !important;
+                    border-radius: 0px !important;
+                }
+
+                .blog-card-box {
+                    width: auto;
+                    padding: 0px 1.25rem 1rem 1.25rem !important;
+
+                    span {
+                        font-size: 0.75rem !important;
+                        line-height: 0.938rem !important;
+                        font-weight: 700;
+                        color: #FF0C66;
+                        text-align: left;
+                        display: flex !important;
+                    }
+
+                    h4 {
+                        font-size: 0.75rem !important;
+                        line-height: 0.938rem !important;
+                        font-weight: 400 !important;
+                        color: #390037 !important;
+                        text-align: left;
+                        text-transform: unset !important;
+                        font-family: "inter", sans-serif !important;
+                    }
+
+                    .blog-card-leia {
+                        display: none !important;
+                    }
+                }
+            }  
+
+            .blog-card:first-of-type {
+                width: 23.938rem !important;
+                height: auto !important;
+                padding: 0px !important;
+                border-radius: 0px 0px 0.725rem 0.725rem !important;
+                float: unset !important;
+                margin-right: 0px !important;
+                margin-bottom: 2.1rem !important;
+
+                .blog-card-thumb {
+                    height: 14.625rem !important;
+                    width: 100% !important;
+                    border-radius: 0px !important;
+                }
+
+                .blog-card-box {
+                    width: 100% !important;
+                    padding: 1rem 2rem 2rem 2rem !important;
+
+                    span {
+                        display: none !important;
+                    }
+
+                    h4 {
+                        font-size: 2rem !important;
+                        line-height: 2.5rem !important;
+                    }
+
+                    p {
+                        margin-bottom: 2rem !important;
+                        line-height: 2rem !important;
+                    }
+
+                    .blog-card-saiba {
+                        width: 100% !important;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 842px) {
@@ -305,6 +437,14 @@
             }
         }
     }
+
+    .blog-titulo-container {
+        .blog-titulo-content {
+            &::before {
+                width: 80% !important;
+            }
+        }
+    }
 }
 
 @media (max-width: 425px) {
@@ -343,6 +483,10 @@
                 height: 13.8rem !important;
             }
         }
+    }
+
+    .blog-titulo-container .blog-titulo-content::before {
+        width: 72% !important;
     }
 }
 

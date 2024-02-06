@@ -20,7 +20,7 @@ include(get_template_directory() . '/template-parts/page/formatos-midia-programa
 include(get_template_directory() . '/template-parts/page/cases-midia-programatica.php'); ?>
 
 <?php //  Blog Mídia Programática
-// include(get_template_directory() . '/template-parts/page/blog-midia-programatica.php'); ?>
+include(get_template_directory() . '/template-parts/page/blog-midia-programatica.php'); ?>
 
 <?php //  Contato Mídia Programática
 // include(get_template_directory() . '/template-parts/page/contato-midia-programatica.php'); ?>
