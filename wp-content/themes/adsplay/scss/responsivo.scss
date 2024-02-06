@@ -1,3 +1,19 @@
+@media (max-width: 1200px) {
+    .banner-principal {
+        height: auto !important;
+        max-height: none !important;
+        
+        .banner-content {
+            padding: 10rem 1.5rem 3rem 1.5rem !important;
+
+            .form-content {
+                position: unset !important;
+                width: auto !important;
+            }
+        }
+    }
+}
+
 @media (max-width: 1172px) {
     .container {
         max-width: 100% !important;
@@ -134,20 +150,6 @@
         }
     }
 
-    .banner-principal {
-        height: auto !important;
-        max-height: none !important;
-        
-        .banner-content {
-            padding: 10rem 1.5rem 3rem 1.5rem !important;
-
-            .form-content {
-                position: unset !important;
-                width: auto !important;
-            }
-        }
-    }
-
     .descritivo-container {
         display: none !important;
     }
@@ -167,6 +169,10 @@
                     align-items: flex-start !important; 
                     flex-direction: column;
                     padding-bottom: 1.3rem !important;
+
+                    h3 {
+                        font-size: 3rem !important;
+                    }
         
                     hr {
                         width: 100% !important;
@@ -223,6 +229,30 @@
             }
         }
     }
+
+    .cases-titulo-content {
+        padding-right: 1.5rem !important;
+        padding-left: 1.5rem !important;
+
+        h3 {
+            font-size: 3rem !important;
+        }
+        
+        hr {
+            width: 85% !important;
+        }
+    }
+
+    .cases-container {
+        .cases-content {
+            grid-template-columns: repeat(4, 24.5%);
+            gap: 0.25rem !important;
+
+            .cases-card {
+                height: 13.8rem !important;
+            }
+        }
+    }
   
 }
 
@@ -264,6 +294,19 @@
     }
 }
 
+@media (max-width: 620px) {
+    .cases-container {
+        .cases-content {
+            grid-template-columns: repeat(3, 33%);
+            gap: 0.25rem !important;
+
+            .cases-card {
+                height: 13.8rem !important;
+            }
+        }
+    }
+}
+
 @media (max-width: 425px) {
 
     .banner-principal {
@@ -282,6 +325,23 @@
         button {
             width: 17rem !important;
             border-radius: 1.5rem !important;
+        }
+    }
+
+    .cases-titulo-content {        
+        hr {
+            width: 80% !important;
+        }
+    }
+
+    .cases-container {
+        .cases-content {
+            grid-template-columns: repeat(2, 49%);
+            gap: 0.65rem !important;
+
+            .cases-card {
+                height: 13.8rem !important;
+            }
         }
     }
 }

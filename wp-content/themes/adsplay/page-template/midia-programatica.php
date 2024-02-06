@@ -17,7 +17,7 @@ include(get_template_directory() . '/template-parts/page/descritivo-midia-progra
 include(get_template_directory() . '/template-parts/page/formatos-midia-programatica.php'); ?>
 
 <?php //  Cases Mídia Programática
-// include(get_template_directory() . '/template-parts/page/cases-midia-programatica.php'); ?>
+include(get_template_directory() . '/template-parts/page/cases-midia-programatica.php'); ?>
 
 <?php //  Blog Mídia Programática
 // include(get_template_directory() . '/template-parts/page/blog-midia-programatica.php'); ?>

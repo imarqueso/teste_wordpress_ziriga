@@ -1705,6 +1705,19 @@ html body .header-container .breadcrumbs-content .current-item {
   transition: 0.5s ease all;
 }
 
+@media (max-width: 1200px) {
+  .banner-principal {
+    height: auto !important;
+    max-height: none !important;
+  }
+  .banner-principal .banner-content {
+    padding: 10rem 1.5rem 3rem 1.5rem !important;
+  }
+  .banner-principal .banner-content .form-content {
+    position: unset !important;
+    width: auto !important;
+  }
+}
 @media (max-width: 1172px) {
   .container {
     max-width: 100% !important;
@@ -1820,17 +1833,6 @@ html body .header-container .breadcrumbs-content .current-item {
   .header-container .breadcrumbs-content span {
     white-space: nowrap;
   }
-  .banner-principal {
-    height: auto !important;
-    max-height: none !important;
-  }
-  .banner-principal .banner-content {
-    padding: 10rem 1.5rem 3rem 1.5rem !important;
-  }
-  .banner-principal .banner-content .form-content {
-    position: unset !important;
-    width: auto !important;
-  }
   .descritivo-container {
     display: none !important;
   }
@@ -1849,6 +1851,9 @@ html body .header-container .breadcrumbs-content .current-item {
     align-items: flex-start !important;
     flex-direction: column;
     padding-bottom: 1.3rem !important;
+  }
+  .formatos-titulo-container .formatos-titulo-overlay .formato-titulo-content .formato-titulo h3 {
+    font-size: 3rem !important;
   }
   .formatos-titulo-container .formatos-titulo-overlay .formato-titulo-content .formato-titulo hr {
     width: 100% !important;
@@ -1891,6 +1896,23 @@ html body .header-container .breadcrumbs-content .current-item {
     max-width: none !important;
     padding: 2rem 1.5rem !important;
   }
+  .cases-titulo-content {
+    padding-right: 1.5rem !important;
+    padding-left: 1.5rem !important;
+  }
+  .cases-titulo-content h3 {
+    font-size: 3rem !important;
+  }
+  .cases-titulo-content hr {
+    width: 85% !important;
+  }
+  .cases-container .cases-content {
+    grid-template-columns: repeat(4, 24.5%);
+    gap: 0.25rem !important;
+  }
+  .cases-container .cases-content .cases-card {
+    height: 13.8rem !important;
+  }
 }
 @media (max-width: 842px) {
   .banner-principal {
@@ -1923,6 +1945,15 @@ html body .header-container .breadcrumbs-content .current-item {
     width: auto !important;
   }
 }
+@media (max-width: 620px) {
+  .cases-container .cases-content {
+    grid-template-columns: repeat(3, 33%);
+    gap: 0.25rem !important;
+  }
+  .cases-container .cases-content .cases-card {
+    height: 13.8rem !important;
+  }
+}
 @media (max-width: 425px) {
   .banner-principal {
     background-size: 395% !important;
@@ -1935,6 +1966,16 @@ html body .header-container .breadcrumbs-content .current-item {
   .form-content button {
     width: 17rem !important;
     border-radius: 1.5rem !important;
+  }
+  .cases-titulo-content hr {
+    width: 80% !important;
+  }
+  .cases-container .cases-content {
+    grid-template-columns: repeat(2, 49%);
+    gap: 0.65rem !important;
+  }
+  .cases-container .cases-content .cases-card {
+    height: 13.8rem !important;
   }
 }
 @media (max-width: 375px) {
