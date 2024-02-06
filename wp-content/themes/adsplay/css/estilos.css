@@ -2028,6 +2028,14 @@ html body .header-container .breadcrumbs-content .current-item {
   .blog-container .blog-content .blog-card:first-of-type .blog-card-box .blog-card-saiba {
     width: 100% !important;
   }
+  .fale-conosco-container .fale-conosco-overlay .fale-conosco-content {
+    padding-right: 1.5rem !important;
+    padding-left: 1.5rem !important;
+  }
+  .fale-conosco-container .fale-conosco-overlay .fale-conosco-content h3 {
+    font-size: 3rem !important;
+    line-height: 3.375rem !important;
+  }
 }
 @media (max-width: 842px) {
   .banner-principal {
@@ -2058,6 +2066,20 @@ html body .header-container .breadcrumbs-content .current-item {
     position: unset !important;
     margin-top: 1rem !important;
     width: auto !important;
+  }
+}
+@media (max-width: 777px) {
+  .fale-conosco-container .fale-conosco-overlay .fale-conosco-content {
+    flex-direction: column;
+    justify-content: flex-start !important;
+    align-items: center !important;
+  }
+  .fale-conosco-container .fale-conosco-overlay .fale-conosco-content h3 {
+    margin-bottom: 2rem !important;
+    text-align: left !important;
+  }
+  .fale-conosco-container .fale-conosco-overlay .fale-conosco-content a {
+    border-radius: 1.938rem !important;
   }
 }
 @media (max-width: 620px) {
@@ -2097,6 +2119,13 @@ html body .header-container .breadcrumbs-content .current-item {
   }
   .blog-titulo-container .blog-titulo-content::before {
     width: 72% !important;
+  }
+  .fale-conosco-container .fale-conosco-overlay .fale-conosco-content h3 {
+    font-size: 2rem !important;
+    line-height: 2.375rem !important;
+  }
+  .fale-conosco-container .fale-conosco-overlay .fale-conosco-content a {
+    width: 100% !important;
   }
 }
 @media (max-width: 375px) {

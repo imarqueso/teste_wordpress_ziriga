@@ -23,7 +23,7 @@ include(get_template_directory() . '/template-parts/page/cases-midia-programatic
 include(get_template_directory() . '/template-parts/page/blog-midia-programatica.php'); ?>
 
 <?php //  Contato Mídia Programática
-// include(get_template_directory() . '/template-parts/page/contato-midia-programatica.php'); ?>
+include(get_template_directory() . '/template-parts/page/contato-midia-programatica.php'); ?>
 
 
 <?php if (have_posts()) :
