@@ -4,7 +4,7 @@
             <div class="banner-box">
                 <img src="<?php echo get_site_url(); ?>/wp-content/themes/adsplay/assets/images/icon_monitor.svg" alt="Icon Monitor">
                 <h1><?php echo get_the_title(); ?></h1>
-                <p>É possível comprar espaços e anunciar em<br/> grandes portais de forma rápida e automática</p>
+                <p>É possível comprar espaços e anunciar em grandes portais de forma rápida e automática</p>
                 <span>Veja também</span>
                 <a href="<?php echo get_site_url(); ?>/marketing-de-performance" class="btn-banner">Marketing de Performance</a>
             </div>

@@ -8,7 +8,7 @@ get_header();
 ?>
 
 <?php //  Banner Mídia Programática
-// include(get_template_directory() . '/template-parts/page/banner-midia-programatica.php'); ?>
+include(get_template_directory() . '/template-parts/page/banner-midia-programatica.php'); ?>
 
 <?php //  Descritivo Mídia Programática
 // include(get_template_directory() . '/template-parts/page/descritivo-midia-programatica.php'); ?>
@@ -65,5 +65,5 @@ endif; ?>
 </script>
 
 <?php
-// get_footer();
+get_footer();
 ?>

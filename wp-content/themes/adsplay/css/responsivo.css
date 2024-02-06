@@ -1,3 +1,50 @@
+@media (max-width: 1172px) {
+  .container {
+    max-width: 100% !important;
+  }
+  .footer-content {
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
+    flex-direction: column;
+    padding: 3rem 1.5rem 0px 1.5rem !important;
+  }
+  .footer-content .footer-box-1 {
+    width: auto !important;
+    margin-bottom: 2rem !important;
+    order: 1;
+  }
+  .footer-content .footer-box-2 {
+    width: auto !important;
+    margin-bottom: 2rem !important;
+    order: 3;
+  }
+  .footer-content .footer-box-3 {
+    width: auto !important;
+    margin-bottom: 2rem !important;
+    order: 4;
+  }
+  .footer-content .footer-box-4 {
+    width: auto !important;
+    height: 9.313rem !important;
+    margin-bottom: 2rem !important;
+    order: 5;
+  }
+  .footer-content .footer-box-5 {
+    width: auto !important;
+    margin-bottom: 2rem !important;
+    order: 2;
+  }
+  .footer-bottom-content {
+    flex-direction: column;
+    justify-content: center !important;
+    align-items: flex-start !important;
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+  }
+  .footer-bottom-content p {
+    margin-bottom: 2rem !important;
+  }
+}
 @media (max-width: 991px) {
   .header-container {
     background: #0B131F !important;
@@ -65,6 +112,53 @@
   }
   .header-container .breadcrumbs-content span {
     white-space: nowrap;
+  }
+}
+@media (max-width: 842px) {
+  .banner-principal {
+    height: auto !important;
+    max-height: none !important;
+    background-size: 395%;
+  }
+  .banner-principal .banner-overlay {
+    background: linear-gradient(0deg, rgb(183, 0, 183) 0%, rgb(183, 0, 183) 31%, rgba(183, 0, 183, 0) 68%, rgba(183, 0, 183, 0)) !important;
+  }
+  .banner-principal .banner-content {
+    flex-direction: column;
+    justify-content: flex-start !important;
+    align-items: center !important;
+    padding-bottom: 4rem !important;
+    padding-top: 14rem !important;
+    padding-right: 1.5rem !important;
+    padding-left: 1.5rem !important;
+  }
+  .banner-principal .banner-content .banner-box {
+    width: auto !important;
+    height: auto !important;
+  }
+  .banner-principal .banner-content .banner-box p {
+    font-weight: 400 !important;
+  }
+  .banner-principal .banner-content .form-content {
+    position: unset !important;
+    margin-top: 1rem !important;
+    width: auto !important;
+  }
+}
+@media (max-width: 425px) {
+  .banner-box img {
+    height: 4.063rem !important;
+    width: auto;
+    margin-bottom: 1rem !important;
+  }
+  .form-content button {
+    width: 17rem !important;
+    border-radius: 1.5rem !important;
+  }
+}
+@media (max-width: 375px) {
+  .btn-banner {
+    width: 100% !important;
   }
 }
 
