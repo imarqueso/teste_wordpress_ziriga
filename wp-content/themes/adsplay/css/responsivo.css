@@ -113,12 +113,83 @@
   .header-container .breadcrumbs-content span {
     white-space: nowrap;
   }
+  .banner-principal {
+    height: auto !important;
+    max-height: none !important;
+  }
+  .banner-principal .banner-content {
+    padding: 10rem 1.5rem 3rem 1.5rem !important;
+  }
+  .banner-principal .banner-content .form-content {
+    position: unset !important;
+    width: auto !important;
+  }
+  .descritivo-container {
+    display: none !important;
+  }
+  .formatos-titulo-container {
+    background-color: #f62bf6 !important;
+  }
+  .formatos-titulo-container .formatos-titulo-overlay {
+    padding: 1.6rem 0px 1rem 0px !important;
+  }
+  .formatos-titulo-container .formatos-titulo-overlay .formato-titulo-content {
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+  }
+  .formatos-titulo-container .formatos-titulo-overlay .formato-titulo-content .formato-titulo {
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
+    flex-direction: column;
+    padding-bottom: 1.3rem !important;
+  }
+  .formatos-titulo-container .formatos-titulo-overlay .formato-titulo-content .formato-titulo hr {
+    width: 100% !important;
+    opacity: 1 !important;
+  }
+  .formatos-titulo-container .formatos-titulo-overlay .formato-titulo-content .formato-subtitulo p {
+    font-weight: 400 !important;
+    font-size: 1.2rem !important;
+    line-height: 2rem !important;
+  }
+  .formatos-abas-container {
+    overflow: auto;
+    justify-content: flex-start !important;
+  }
+  .formatos-abas-container .formatos-aba-content {
+    min-width: 86rem;
+    padding-right: 1.5rem !important;
+    padding-left: 1.5rem !important;
+  }
+  .formatos-container {
+    background: #1e0c42 !important;
+  }
+  .formatos-container .formatos-content {
+    align-items: center !important;
+    justify-content: flex-start !important;
+    flex-direction: column;
+    padding: 0px !important;
+  }
+  .formatos-container .formatos-content .formato-box-1 {
+    width: 100% !important;
+    max-width: none !important;
+    background-color: #1e0c42;
+    padding: 2rem 1.5rem !important;
+  }
+  .formatos-container .formatos-content .formato-box-1 .formato-slide {
+    width: auto !important;
+  }
+  .formatos-container .formatos-content .formato-box-2 {
+    width: 100% !important;
+    max-width: none !important;
+    padding: 2rem 1.5rem !important;
+  }
 }
 @media (max-width: 842px) {
   .banner-principal {
     height: auto !important;
     max-height: none !important;
-    background-size: 395%;
+    background-size: 220%;
   }
   .banner-principal .banner-overlay {
     background: linear-gradient(0deg, rgb(183, 0, 183) 0%, rgb(183, 0, 183) 31%, rgba(183, 0, 183, 0) 68%, rgba(183, 0, 183, 0)) !important;
@@ -146,6 +217,9 @@
   }
 }
 @media (max-width: 425px) {
+  .banner-principal {
+    background-size: 395% !important;
+  }
   .banner-box img {
     height: 4.063rem !important;
     width: auto;

@@ -11,10 +11,10 @@ get_header();
 include(get_template_directory() . '/template-parts/page/banner-midia-programatica.php'); ?>
 
 <?php //  Descritivo Mídia Programática
-// include(get_template_directory() . '/template-parts/page/descritivo-midia-programatica.php'); ?>
+include(get_template_directory() . '/template-parts/page/descritivo-midia-programatica.php'); ?>
 
 <?php //  Formatos Mídia Programática
-// include(get_template_directory() . '/template-parts/page/formatos-midia-programatica.php'); ?>
+include(get_template_directory() . '/template-parts/page/formatos-midia-programatica.php'); ?>
 
 <?php //  Cases Mídia Programática
 // include(get_template_directory() . '/template-parts/page/cases-midia-programatica.php'); ?>
@@ -61,6 +61,22 @@ endif; ?>
         nextArrow: jQuery('#arrow-right'),
         infinite: false,
         autoplay: false,
+        responsive: [
+            {
+            breakpoint: 612,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+            }
+            },
+            {
+            breakpoint: 425,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+            }
+            }
+        ],
     });
 </script>
 

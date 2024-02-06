@@ -133,6 +133,96 @@
             }
         }
     }
+
+    .banner-principal {
+        height: auto !important;
+        max-height: none !important;
+        
+        .banner-content {
+            padding: 10rem 1.5rem 3rem 1.5rem !important;
+
+            .form-content {
+                position: unset !important;
+                width: auto !important;
+            }
+        }
+    }
+
+    .descritivo-container {
+        display: none !important;
+    }
+
+    .formatos-titulo-container {
+        background-color: #f62bf6 !important;
+
+        .formatos-titulo-overlay {
+            padding: 1.6rem 0px 1rem 0px !important;
+
+            .formato-titulo-content {
+                padding-left: 1.5rem !important;
+                padding-right: 1.5rem !important;
+        
+                .formato-titulo {
+                    justify-content: flex-start !important;
+                    align-items: flex-start !important; 
+                    flex-direction: column;
+                    padding-bottom: 1.3rem !important;
+        
+                    hr {
+                        width: 100% !important;
+                        opacity: 1 !important;
+                    }
+                }
+        
+                .formato-subtitulo {
+                    p {
+                        font-weight: 400 !important;
+                        font-size: 1.2rem !important;
+                        line-height: 2rem !important;
+                    }
+                }
+            }
+        }
+    }
+
+    .formatos-abas-container {
+        overflow: auto;
+        justify-content: flex-start !important;
+
+        .formatos-aba-content  {
+            min-width: 86rem;
+            padding-right: 1.5rem !important;
+            padding-left: 1.5rem !important;
+        }
+    }
+
+    .formatos-container {
+        background: #1e0c42 !important;
+
+        .formatos-content {
+            align-items: center !important;
+            justify-content: flex-start !important;
+            flex-direction: column;
+            padding: 0px !important;
+
+            .formato-box-1 {
+                width: 100% !important;
+                max-width: none !important;
+                background-color: #1e0c42;
+                padding: 2rem 1.5rem !important;
+
+                .formato-slide {
+                    width: auto !important;
+                }
+            }
+
+           .formato-box-2 {
+                width: 100% !important;
+                max-width: none !important;
+                padding: 2rem 1.5rem !important;
+            }
+        }
+    }
   
 }
 
@@ -141,7 +231,7 @@
     .banner-principal {
         height: auto !important;
         max-height: none !important;
-        background-size: 395%;
+        background-size: 220%;
 
         .banner-overlay {
             background: linear-gradient(0deg, rgb(183 0 183) 0%, rgb(183 0 183) 31%, rgb(183 0 183 / 0%) 68%, rgb(183 0 183 / 0%)) !important;
@@ -175,6 +265,11 @@
 }
 
 @media (max-width: 425px) {
+
+    .banner-principal {
+        background-size: 395% !important;
+    }
+
     .banner-box { 
         img {
             height: 4.063rem !important;
