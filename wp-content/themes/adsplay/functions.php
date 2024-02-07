@@ -721,3 +721,40 @@ function tg_remove_empty_paragraph_tags_from_shortcodes_wordpress($content)
 	return strtr($content, $toFix);
 }
 add_filter('the_content', 'tg_remove_empty_paragraph_tags_from_shortcodes_wordpress');
+
+function contactform7_before_send_mail( $form_to_DB ) {
+    $mydb = new wpdb(DB_USER, DB_PASSWORD, DB_NAME, DB_HOST);
+
+    $form_to_DB = WPCF7_Submission::get_instance();
+    if ( $form_to_DB ) 
+        $formData = $form_to_DB->get_posted_data();
+		$nome = $formData['nome'];
+		$whatsapp = $formData['whatsapp'];
+		$email = $formData['email'];
+		$cargo = sanitize_text_field( wp_unslash( $formData['cargo'][0] ) );
+		$segmento = sanitize_text_field( wp_unslash( $formData['segmento'][0] ) );
+		$interesse = sanitize_text_field( wp_unslash( $formData['interesse'][0] ) );
+
+   		 $mydb->insert( 'leads', array( 
+		'nome' => $nome,
+		'whatsapp' => $whatsapp,
+		'email' => $email,
+		'cargo' => $cargo,
+		'segmento' => $segmento,
+		'interesse' => $interesse 
+		), 
+		array( 
+			'%s', 
+			'%s',
+			'%s',
+			'%s', 
+			'%s', 
+			'%s' 
+		) );
+}
+
+remove_all_filters ('wpcf7_before_send_mail');
+
+add_action( 'wpcf7_before_send_mail', 'contactform7_before_send_mail' );
+
+
