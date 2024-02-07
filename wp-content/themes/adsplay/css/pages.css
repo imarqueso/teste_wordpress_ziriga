@@ -865,9 +865,10 @@
   border-radius: 0.725rem;
 }
 .blog-container .blog-content .blog-card .blog-card-thumb img {
-  width: 110%;
-  height: auto;
-  min-height: 110%;
+  min-width: 155% !important;
+  height: auto !important;
+  max-width: none !important;
+  max-height: none !important;
 }
 .blog-container .blog-content .blog-card .blog-card-box {
   width: 32rem;
