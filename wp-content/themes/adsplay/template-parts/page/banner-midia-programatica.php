@@ -31,3 +31,22 @@ elements.forEach(function(element) {
     });
 });
 </script>
+
+<script>
+document.getElementById('input-whatsapp').addEventListener('input', function (e) {
+    var input = e.target;
+    var num = input.value.replace(/\D/g, '');
+
+    input.value = '(' + num.substring(0, 2) + ') ' + num.substring(2, 7) + '-' + num.substring(6, 10);
+});
+</script>
+
+<script>
+    var selects = document.querySelectorAll('.wpcf7-form  select');
+
+    selects.forEach(function(select) {
+        if (select.options.length > 0) {
+            select.options[0].textContent = 'Escolha uma opção';
+        }
+    });
+</script>
