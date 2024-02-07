@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "bubbly-buttress-413613",
+  "private_key_id": "ad941b94b41c3c300f4473a2882ea4ca710b2b97",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC3R0qrse1gryF5\nPHH/IoA7KSENICVBjIh0gmf7nrErXziV6UrjysS2l4Ry5FzAsF4SujuXIcDmS2cQ\nzij5oXy7AK5GycAYtqZCRkdqiBD70wOMm0av3UEyS3Vq8ltSmLd6H0Qj/Dqkq+/N\nKiiMEektBC1ZNUjUtCd2MX9XDS9hN+9Yaqf903SEQXYAvphoysOc3iupY2yPKsbN\nsFmx/S6ciq68yqtwGD8fRabE8oKZH3UKP18HHzQMgHMWOQjx9kN+rFAT7FiEzY+e\nd4KFG7pv4O9Jw5JMtPDJ13ufm2Ob2JBDXqkjYgoyg6HEwULjG1WBp0qybh0dQlhq\nbDwKqB8rAgMBAAECggEAA8isuzk2OweKNzBeSP//uuOe9+xnmIGdZtXRpOi6sJ/I\nptBxXArKOs/IfFlsuAsKmHQBLyQru9h/02F46ZJICgJt39MfQcr7MOWRmWnush4v\nu+flWmAmXUr8AhW3zklpcdnScv2maXFEceEoqAD+qTqZUy2xyBlJmfKdYJyHdQgm\nd6wIdlDXFqAxJc71ij2faXjkoVWtN5Uds6XYwFMqp6kryaFlU6eJvu4Q8YpjAt2U\nNPMZYeJYlzZoqFKu7zL4Plar9s+YJKDwS9Ii45ihSgEVJTp2R398gq3lctOIKfdy\nXlbnYpRqoEyBo4pmLsewAE7RvtwIzxUFbslIPhgF8QKBgQDwgIvpMhoflw6Bw6kK\nwNjZO1Z5+ii+mKgKmMfXQbyyHyBTsxYMf/266N5TWmIGR4SBsaxIaHJBXAmSC5Q8\nO42zBWOXTztRbVr0+49vQj+EMbydUpguDlXUd7SUK5rE0r3SDRbWr8r3zikIhWzY\nW7RTtsI3RiV6t9++gREAlDDXJwKBgQDDFsC3wZ75Yaru7D9a8GD2SGO1TJ+p0IRd\nv8vWYDry/YeLCKcbAAyXyHMP9FKJ/iLrXx7oxd1m8XN2Q9XmCKqoDDhpPS4QL2go\nd3PJ4hj3tDS8BbH7DfriwQEOx1YYuhP1Wv9UG58YtSLlEErPZN2tqVBVpouxW2YJ\nG+QusnAaXQKBgB/7SB+zjOvEf6Zb6X/Hk06X6HECBicKT9ZQ6MpEMJ6TKw5WU0lI\nP+p6Cw6Uh1KEcid5BAsA8KimX5NvPMAhvz8eKVc2rxGt9Bl91l4aNi4TGxzknd4K\nA/nkDTxi7AreZ2WmXfIgoGIBpU0/yPCgiUNUm1EUX+mIyBUiPquQCUqjAoGAebbg\nVcT/IifFNXs/q8T9OarASoSbuJ7XdoYK7pzrKl7zCdNELpxBPxFYeEO+m0lrD94w\nspmAIJHTr51y/im6D05Qg5gf/QkWuuiL3RCq8yADJquG91Mpi/9OYaIMHTE68oDr\ne9Yf1JJuSut3QR11ELvp2wYlcWnMpzI3ksrRFiECgYEA2XoIqIOFAtK95qcSodnk\nUDSq/lOtJ7ipNuCMAR+RE2EMChzGa1Uzn0G8mKGdH2DyghFLfl20crahwJmAo9dl\nXVmTjKrMo08iAsqAv1V23YhcwqN5BVqo+u4nRv27yHnvWL5R9NXABFZN2NzsKKbO\nPZ+ak00tHzhjjJd5h5wBAc0=\n-----END PRIVATE KEY-----\n",
+  "client_email": "teste-ziriga@bubbly-buttress-413613.iam.gserviceaccount.com",
+  "client_id": "111980375828534272657",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/teste-ziriga%40bubbly-buttress-413613.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

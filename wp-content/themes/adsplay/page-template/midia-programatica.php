@@ -25,13 +25,7 @@ include(get_template_directory() . '/template-parts/page/blog-midia-programatica
 <?php //  Contato Mídia Programática
 include(get_template_directory() . '/template-parts/page/contato-midia-programatica.php'); ?>
 
-
-<?php if (have_posts()) :
-    while (have_posts()) : the_post();
-        the_content();
-        edit_post_link();
-    endwhile;
-endif; ?>
+<?php edit_post_link(); ?>
 
 <script>
     var abaFormatos = document.querySelectorAll("li.aba");

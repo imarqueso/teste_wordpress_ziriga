@@ -120,7 +120,7 @@
   text-align: center;
   margin-bottom: 1.25rem;
 }
-.banner-principal .banner-overlay .banner-content .form-content form {
+.banner-principal .banner-overlay .banner-content .form-content .wpcf7 {
   width: 100%;
   height: auto;
   padding: 0px;
@@ -130,17 +130,25 @@
   justify-content: flex-start;
   align-items: center;
 }
-.banner-principal .banner-overlay .banner-content .form-content form .form-box {
+.banner-principal .banner-overlay .banner-content .form-content .wpcf7 form {
   width: 100%;
   height: auto;
   padding: 0px;
   margin: 0px;
-  margin-bottom: 0.8rem;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
 }
-.banner-principal .banner-overlay .banner-content .form-content form .form-box label {
+.banner-principal .banner-overlay .banner-content .form-content .wpcf7 form p {
+  width: 100%;
+  height: auto;
+  padding: 0px;
+  margin: 0px;
+  display: block;
+}
+.banner-principal .banner-overlay .banner-content .form-content .wpcf7 form p label {
   width: 100%;
   height: auto;
   padding: 0px;
@@ -149,8 +157,9 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  margin-bottom: 1.1rem !important;
 }
-.banner-principal .banner-overlay .banner-content .form-content form .form-box label span {
+.banner-principal .banner-overlay .banner-content .form-content .wpcf7 form p label span {
   font-family: "Inter", sans-serif !important;
   color: #1E0C42;
   font-weight: 600;
@@ -158,7 +167,7 @@
   font-size: 0.875rem;
   margin-bottom: 0.8rem;
 }
-.banner-principal .banner-overlay .banner-content .form-content form .form-box label input {
+.banner-principal .banner-overlay .banner-content .form-content .wpcf7 form p label input {
   width: 100%;
   height: 2.375rem;
   border-radius: 1rem;
@@ -173,13 +182,23 @@
   justify-content: flex-start;
   align-items: center;
 }
-.banner-principal .banner-overlay .banner-content .form-content form .form-box label input::placeholder {
+.banner-principal .banner-overlay .banner-content .form-content .wpcf7 form p label input::placeholder {
   color: #737373;
   font-weight: 400;
   font-size: 0.875rem;
   font-family: "Inter", sans-serif !important;
 }
-.banner-principal .banner-overlay .banner-content .form-content form .form-box label select {
+.banner-principal .banner-overlay .banner-content .form-content .wpcf7 form p label .wpcf7-form-control-wrap {
+  width: 100%;
+  height: auto;
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.banner-principal .banner-overlay .banner-content .form-content .wpcf7 form p label .wpcf7-form-control-wrap select {
   width: 100%;
   height: 2.375rem;
   border-radius: 1rem;
@@ -193,23 +212,30 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  max-width: none !important;
 }
-.banner-principal .banner-overlay .banner-content .form-content form .form-box label select::placeholder {
+.banner-principal .banner-overlay .banner-content .form-content .wpcf7 form p label .wpcf7-form-control-wrap select::placeholder {
   color: #737373;
   font-weight: 400;
   font-size: 0.875rem;
   font-family: "Inter", sans-serif !important;
 }
-.banner-principal .banner-overlay .banner-content .form-content form .form-box:first-of-type label {
+.banner-principal .banner-overlay .banner-content .form-content .wpcf7 form p label:nth-of-type(1) {
   width: 48.5%;
+  float: left;
+  margin-right: 2%;
 }
-.banner-principal .banner-overlay .banner-content .form-content form button {
+.banner-principal .banner-overlay .banner-content .form-content .wpcf7 form p label:nth-of-type(2) {
+  width: 48.5%;
+  float: left;
+}
+.banner-principal .banner-overlay .banner-content .form-content .wpcf7 form p .btn-form {
   width: 100%;
-  height: 2.375rem;
-  border-radius: 1rem;
+  height: auto;
+  border-radius: 1.2rem;
   background-color: #B700B7;
   border: 1px solid #B700B7;
-  padding: 1.188rem 1rem 1.188rem 1rem;
+  padding: 0.9rem 1rem 0.7rem 1rem;
   color: #FFFFFF;
   font-weight: 700;
   font-size: 0.875rem;
@@ -220,9 +246,38 @@
   filter: brightness(1);
   transition: 0.5s ease all;
 }
-.banner-principal .banner-overlay .banner-content .form-content form button:hover {
+.banner-principal .banner-overlay .banner-content .form-content .wpcf7 form p .btn-form:hover {
   filter: brightness(1.4);
   transition: 0.5s ease all;
+}
+.banner-principal .banner-overlay .banner-content .form-content .wpcf7 form p .wpcf7-not-valid-tip {
+  margin-bottom: 0px !important;
+  margin-top: 0.8rem !important;
+  color: red;
+}
+.banner-principal .banner-overlay .banner-content .form-content .wpcf7 form .wpcf7-response-output {
+  border: none !important;
+  width: 100%;
+  height: auto;
+  padding: 0px !important;
+  margin: 0px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: red;
+  font-family: "Inter", sans-serif !important;
+  font-weight: 600;
+  text-align: left;
+  font-size: 0.975rem;
+  line-height: 1.2rem;
+  padding-top: 0.8rem !important;
+}
+.banner-principal .banner-overlay .banner-content .form-content .wpcf7 form .wpcf7-spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0px !important;
 }
 
 .descritivo-container {
